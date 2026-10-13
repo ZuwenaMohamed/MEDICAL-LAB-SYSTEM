@@ -1,0 +1,193 @@
+
+html {
+    color-scheme: light;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.shrink-0 svg {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+/* SweetAlert2 - Medical Laboratory System */
+
+.swal2-popup.brand-alert-popup {
+    width: min(420px, calc(100vw - 32px));
+    padding: 28px 24px;
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 20px 60px rgb(15 23 42 / 16%);
+    font-family: inherit;
+}
+
+.brand-alert-title {
+    margin-top: 8px;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.brand-alert-html {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.brand-alert-confirm,
+.brand-alert-cancel {
+    min-width: 110px;
+    padding: 11px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.brand-alert-confirm {
+    background: #1d4ed8 !important;
+    color: #ffffff !important;
+}
+
+.brand-alert-confirm:hover {
+    background: #1e40af !important;
+}
+
+.brand-alert-cancel {
+    background: #eff6ff !important;
+    color: #1d4ed8 !important;
+}
+
+.brand-alert-cancel:hover {
+    background: #dbeafe !important;
+}
+
+.swal2-popup .swal2-icon {
+    margin-top: 4px;
+}
+
+.brand-alert-delete {
+    min-width: 110px;
+    padding: 11px 18px;
+    border-radius: 10px;
+    background: #dc2626 !important;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.brand-alert-delete:hover {
+    background: #b91c1c !important;
+}
+/* Success notification */
+.swal2-popup.brand-success-popup {
+    width: min(500px, calc(100vw - 32px)) !important;
+    padding: 22px 24px !important;
+    box-sizing: border-box !important;
+    border: 1px solid #dbeafe;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgb(15 23 42 / 12%);
+}
+
+/* Success title */
+.swal2-popup.brand-success-popup .swal2-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #ffffff;
+    font-size: 25px !important;
+    font-weight: 700;
+    text-align: left !important;
+}
+
+/* Success message */
+.swal2-popup.brand-success-popup .swal2-html-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 5px 0 0 !important;
+    padding: 0 !important;
+    color: #ffffff;
+    font-size: 14px !important;
+    line-height: 1.5;
+    text-align: left !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+}
+
+.brand-success-popup .swal2-timer-progress-bar {
+    background: #ffffff;
+}
+/* White success tick and circle */
+.swal2-icon.swal2-success {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+    background-color: #ffffff !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: #ffffff !important;
+}
+
+/* settings */
+.settings-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 4px;
+    border-bottom: 2px solid transparent;
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.settings-nav-link:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+    text-decoration: none;
+}
+
+.settings-nav-link svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.settings-nav-link.active {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+
+
+/* Page Loading Overlay */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.page-loader-spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #dbeafe;
+    border-top-color: #1d4ed8;
+    border-radius: 50%;
+    animation: page-loader-spin 0.8s linear infinite;
+}
+
+@keyframes page-loader-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
